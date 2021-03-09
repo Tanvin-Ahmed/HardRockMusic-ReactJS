@@ -17,7 +17,7 @@ const Lyrics = () => {
         setSpinner(false);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [artist, title]);
   
   if (!lyrics) {
       return <h1 className="text-center mt-5">Lyrics is not available</h1>

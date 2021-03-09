@@ -19,7 +19,7 @@ const SearchSong = () => {
         setSpinner(false);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [name]);
   return (
     <>
     {
